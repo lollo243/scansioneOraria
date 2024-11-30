@@ -1,0 +1,130 @@
+/* Generale */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #28a745;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  /* Rimane visibile durante lo scorrimento */
+  top: 0;
+  z-index: 10;
+}
+
+.lista-indirizzi {
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+/* Tabelle */
+table {
+  width: 90%;
+  /* Ridotto per adattarsi a schermi piccoli */
+  max-width: 600px;
+  /* Limite massimo per tablet/PC */
+  margin: 40px auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+th,
+td {
+  border: 1px solid #000;
+  padding: 10px;
+  font-size: 1em;
+}
+
+th {
+  background-color: #28a745;
+  color: white;
+}
+
+td {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+/* Colori delle materie */
+.materia-italiano {
+  background-color: #ff4d4d;
+  /* Rosso */
+}
+
+.materia-matematica {
+  background-color: #4d79ff;
+  /* Blu */
+}
+
+.materia-storia {
+  background-color: #4dff4d;
+  /* Verde */
+}
+
+.materia-inglese {
+  background-color: #b366ff;
+  /* Viola */
+}
+
+.materia-fisica {
+  background-color: #ff9900;
+  /* Arancione */
+}
+
+/* Responsive design per dispositivi mobili */
+@media screen and (max-width: 768px) {
+  table {
+    font-size: 0.9em;
+    /* Rimpiccioliamo il testo */
+  }
+
+  th,
+  td {
+    padding: 8px;
+    /* Riduciamo i margini */
+  }
+}
+
+/* Bottoni */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 200px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
