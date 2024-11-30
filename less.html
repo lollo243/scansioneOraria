@@ -1,27 +1,53 @@
-// Funzione per navigare tra le pagine
-function vaiA(pagina) {
-    window.location.href = pagina;
-}
+<!DOCTYPE html>
+<html lang="it">
 
-// Interattività con bottoni e contenuti
-document.addEventListener("DOMContentLoaded", () => {
-    const bottoni = document.querySelectorAll(".bottone-indirizzo");
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orario - Informatica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    bottoni.forEach(bottone => {
-        bottone.addEventListener("click", () => {
-            bottone.style.backgroundColor = "#3CB371";
-        });
-    });
+<body>
+    <header>
+        <h1>Orario - Informatica</h1>
+    </header>
 
-    // Centrare automaticamente le tabelle su schermi piccoli
-    const tabelle = document.querySelectorAll("table");
-    tabelle.forEach(tabella => {
-        tabella.style.marginLeft = "auto";
-        tabella.style.marginRight = "auto";
-    });
-});
+    <main>
+        <table>
+            <tr>
+                <th>Ora</th>
+                <th>Lunedì</th>
+                <th>Martedì</th>
+            </tr>
+            <tr>
+                <td bgcolor="gray">1° Ora</td>
+                <td class="materia-italiano">ITALIANO</td>
+                <td class="materia-matematica">MATEMATICA</td>
+            </tr>
+            <tr>
+                <td bgcolor="gray">2° Ora</td>
+                <td class="materia-matematica">MATEMATICA</td>
+                <td class="materia-fisica">FISICA</td>
+            </tr>
+            <tr>
+                <td bgcolor="gray">3° Ora</td>
+                <td class="materia-storia">STORIA</td>
+                <td class="materia-italiano">ITALIANO</td>
+            </tr>
+            <tr>
+                <td bgcolor="gray">4° Ora</td>
+                <td class="materia-inglese">INGLESE</td>
+                <td class="materia-inglese">INGLESE</td>
+            </tr>
+        </table>
+    </main>
+    <center>
+        <a href="index.html"> torna alla lista indirizzi </a>
+    </center>
+    <footer>
+        ISTITUTO A.FASSINO
+    </footer>
+</body>
 
-document.addEventListener("DOMContentLoaded", () => {
-    const body = document.body;
-    body.style.minHeight = `${window.innerHeight}px`; // Adatta il contenuto alla finestra
-});
+</html>
